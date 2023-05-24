@@ -154,7 +154,7 @@ public class Movie {
 		return builder.toString();
 	}
 
-	public void isValid() throws CustomException {
+	public void isValid() {
 		if(description.length()>200) {
 			throw new CustomException("Description exceeds the limit");
 		}
